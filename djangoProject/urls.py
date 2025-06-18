@@ -9,7 +9,6 @@ from users.api.v1.viewsets import CustomLoginView
 
 api_v1_patterns = [
     path("", include("users.api.v1.urls")),
-    path("", include("properties.urls")),
     path("authenticate/", CustomLoginView.as_view()),
 ]
 
